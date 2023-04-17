@@ -88,7 +88,7 @@ margin-top: 4.5rem;
     background-color: #FDFD96;
     display: block;
     position: absolute;
-    top: 220px;
+    top: 13.75rem;
     left: 0;
     right: 0;
     margin: auto;
@@ -100,7 +100,7 @@ margin-top: 4.5rem;
       display: block;
       position: absolute;
       color: inherit;
-      top: 220px;
+      top: 13.75rem;
       left: 0;
       right: 0;
       margin: auto;
@@ -137,7 +137,15 @@ margin-top: 4.5rem;
         height: 6.25rem;
         width: 5.24rem;
         border-radius: 75% 75% 70% 70%;
-      }
+    }
     
-    
+      .balloon:before {
+        top: 6.3rem;
+    }
+
+      .balloon:after {        
+        top: 6.3rem;       
+    }
+
+
   }
