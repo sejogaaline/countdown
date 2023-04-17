@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Mynerve';
+    margin: 0;
+    padding: 1rem;
+}
+
+h1 {
+font-weight: normal;
+font-size: 4rem;
+margin-top: 4.5rem;
+}
+
+.intervention img {
+    width: 53%;
+}
+
+.intervention{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-container{
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+}
+
+.countdown-container div {
+    width: 24%;
+}
+
+.text{
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 1rem 2rem;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span{
+    font-size: 2rem;
+    
+}
+
+#balloon-container {
+    height: 100vh;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: opacity 500ms;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .balloon {
+    height: 13.75rem;
+    width: 11.56rem;
+    border-radius: 75% 75% 70% 70%;
+    position: relative;
+    background-image: url(jessi.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+  }
+  
+  .balloon:before {
+    content: "";
+    height: 100px;
+    width: 1px;
+    padding: 1px;
+    background-color: #FDFD96;
+    display: block;
+    position: absolute;
+    top: 220px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  .balloon:after {
+      content: "▲";
+      text-align: center;
+      display: block;
+      position: absolute;
+      color: inherit;
+      top: 220px;
+      left: 0;
+      right: 0;
+      margin: auto;
+  }
+  
+  @keyframes float {
+    from {transform: translateY(100vh);
+    opacity: 1;}
+    to {transform: translateY(-200vh);
+    opacity: 0;}
+  }
+
+  @media screen and (max-width: 375px){
+    .intervention img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .countdown-el span{
+        font-size: 1rem;
+    }
+
+    .text{
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin: 0.4rem 1.75rem;
+    }
+
+    .balloon {
+        height: 6.25rem;
+        width: 5.24rem;
+        border-radius: 75% 75% 70% 70%;
+      }
+    
+    
+  }
